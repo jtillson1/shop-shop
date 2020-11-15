@@ -37,7 +37,6 @@ const resolvers = {
 
         return user;
       }
-
       throw new AuthenticationError('Not logged in');
     },
     order: async (parent, { _id }, context) => {
